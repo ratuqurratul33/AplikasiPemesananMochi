@@ -1,0 +1,11 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="dark">#2A2A2A</color>
+    <color name="grey">#757575</color>
+    <color name="grey_dark">#4A4A4A</color>
+    <color name="grey_light">#E0E0E0</color>
+
+    <!-- HIPUD -->
+    <color name="pink_dark">#C6004E</color>   <!-- pink tua -->
+    <color name="pink_soft">#FFE6F5</color>   <!-- background -->
+</resources>

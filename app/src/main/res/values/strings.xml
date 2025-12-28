@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HipudApp</string>
+    <string name="auth_title">Sign up</string>
+    <string name="auth_desc">Daftar untuk mulai memesan dessert favoritmu dari Hipud</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_login">Login</string>
+</resources>
