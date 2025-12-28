@@ -1,4 +1,4 @@
-![WhatsApp Image 2025-12-28 at 02 34 33 (4)](https://github.com/user-attachments/assets/7a5b7de2-ea7d-4dea-9b72-fde7345c368a)📱 HipudApp
+📱 HipudApp
 Aplikasi Pemesanan Dessert Mochi Berbasis Android
 **BAB I
 
@@ -146,11 +146,12 @@ Profile Page
 4.2 Dokumentasi Screenshot Aplikasi
 
 Screenshot aplikasi disimpan pada folder berikut:
-![04_login_page](https://github.com/user-attachments/assets/58f15708-5d66-4a64-ae4d-1484144b91e2)
-![05_home_pag](https://github.com/user-attachments/assets/2d8cd642-ea6e-43ea-8c23-93eccd5c9cbe)
+
 ![01_main_page png](https://github.com/user-attachments/assets/c1a9cfc8-f64f-4e5d-b983-a5133828e4b7)
 ![02_auth_page](https://github.com/user-attachments/assets/1f9c5442-8ee3-424e-9063-0a88efa1fa47)
 ![03_register_page](https://github.com/user-attachments/assets/447d00b6-da63-4032-9046-671b853d77ed)
+![04_login_page](https://github.com/user-attachments/assets/58f15708-5d66-4a64-ae4d-1484144b91e2)
+![05_home_pag](https://github.com/user-attachments/assets/2d8cd642-ea6e-43ea-8c23-93eccd5c9cbe)
 
 
 
