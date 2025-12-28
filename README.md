@@ -147,13 +147,15 @@ Profile Page
 
 Screenshot aplikasi disimpan pada folder berikut:
 
-![01_main_page png](https://github.com/user-attachments/assets/c1a9cfc8-f64f-4e5d-b983-a5133828e4b7)
+![01_main_page png](https://github.com/user-attachments/assets/c1a9cfc8-f64f-4e5d-b98![08_succsess_page](https://github.com/user-attachments/assets/23e3a3a8-1b47-498e-ba78-33f7b54f4bee)
 ![02_auth_page](https://github.com/user-attachments/assets/1f9c5442-8ee3-424e-9063-0a88efa1fa47)
 ![03_register_page](https://github.com/user-attachments/assets/447d00b6-da63-4032-9046-671b853d77ed)
 ![04_login_page](https://github.com/user-attachments/assets/58f15708-5d66-4a64-ae4d-1484144b91e2)
-![05_home_pag](https://github.com/user-attachments/assets/2d8cd642-ea6e-43ea-8c23-93eccd5c9cbe)
-
-
+![05_home_page](https://github.com/user-attachments/assets/0716d9d6-84c2-4aa3-957d-05f6ff107859)
+![06_order_page](https://github.com/user-attachments/assets/5e469353-1bc6-4b43-aa9a-84c2893e157e)
+![07_address_page](https://github.com/user-attachments/assets/f65aa6f5-05d2-4837-ac77-2e887bf494c8)
+![08_succsess_page](https://github.com/user-attachments/assets/a4772574-f173-4501-920b-efae4d0ad8ae)
+![09_profile_page](https://github.com/user-attachments/assets/56133ef4-018b-4331-9140-f30d5bb3402c)
 
 
 Screenshot ini digunakan sebagai dokumentasi visual pada laporan dan README.
