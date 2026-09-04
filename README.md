@@ -24,11 +24,8 @@ A mochi dessert ordering Android app, built with production-grade **Clean Archit
 ⚙️ Kotlin
 🎨 Jetpack Compose + Material Design 3
 💉 Hilt (Dependency Injection)
-🗄️ Room (local database)
-🧷 DataStore (preferences)
 🧭 Navigation Compose
 🔄 Kotlin Coroutines & Flow
-
 ---
 
 ## 🎯 Project Purpose
