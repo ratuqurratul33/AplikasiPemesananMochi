@@ -1,94 +1,63 @@
 # 🍡 HipudApp
 
-**HipudApp** adalah aplikasi Android pemesanan dessert mochi ("Cafe Centil") yang dibangun dengan
-arsitektur production-grade: Clean Architecture, MVVM, Jetpack Compose, dan Material Design 3.
-Pengguna dapat mendaftar/login, menelusuri katalog mochi, mengkustomisasi varian produk, memilih
-jadwal pengiriman (delivery batch) sesuai kuota yang tersedia, mengisi alamat pengiriman, hingga
-menerima konfirmasi pesanan — semuanya dalam tampilan soft-pink yang clean dan profesional, dengan
-dukungan dark mode premium.
+A mochi dessert ordering Android app, built with production-grade **Clean Architecture**,
+**Jetpack Compose**, and **Material Design 3**.
 
-## ✨ Fitur Utama
+---
 
-- **Autentikasi lokal** — register & login dengan password yang di-hash (salted SHA-256), bukan
-  disimpan sebagai plaintext.
-- **Katalog produk** — 10 varian mochi dengan harga, deskripsi, dan gambar.
-- **Customizer varian produk** — pilih ketebalan kulit mochi & tekstur isian langsung dari halaman
-  detail produk lewat selectable chips.
-- **Kuota & jadwal pengiriman (delivery batch)** — Batch Pagi / Batch Sore dengan progress bar
-  kuota real-time; batch yang penuh otomatis terkunci.
-- **Keranjang & checkout** — kelola jumlah item, pilih jadwal pengiriman, isi alamat, dan lihat
-  ringkasan total sebelum memesan.
-- **Profil & preferensi tema** — ganti tema Sistem / Terang / Gelap kapan saja.
+## 🚀 Features
 
-## 🛠️ Tech Stack
+* User authentication (register & login) with salted, hashed passwords
+* Browse the mochi catalog with pricing, description, and images
+* Customize product variants (mochi skin thickness & filling texture) via selectable chips
+* Delivery batch quota system (Morning / Afternoon batch) with a real-time progress indicator
+* Cart management with quantity control and live subtotal
+* Address form with input validation
+* Order confirmation flow
+* Light & Dark theme, switchable from the Profile screen
+* Dependency injection wiring the whole app together with Hilt
 
-| Layer | Teknologi |
-|---|---|
-| Bahasa | Kotlin |
-| UI | Jetpack Compose + Material Design 3 |
-| Arsitektur | Clean Architecture (data / domain / presentation) + MVVM |
-| Dependency Injection | Hilt |
-| Local Database | Room |
-| Preferences | DataStore |
-| Navigasi | Navigation Compose |
-| Concurrency | Kotlin Coroutines & Flow |
-| Font | Poppins (headline) + Roboto (body) |
+---
 
-### Struktur Modul
+## 🧩 Tech Stack
 
-```
-lat.pam.hipudapp/
-├── core/            # design system, navigasi, util, penanganan error bersama
-├── data/            # Room, DataStore, implementasi repository, modul Hilt
-├── domain/          # model bisnis, kontrak repository, use case
-└── presentation/    # layar Compose + ViewModel per fitur
-```
+⚙️ Kotlin
+🎨 Jetpack Compose + Material Design 3
+💉 Hilt (Dependency Injection)
+🗄️ Room (local database)
+🧷 DataStore (preferences)
+🧭 Navigation Compose
+🔄 Kotlin Coroutines & Flow
 
-## 🚀 Cara Menjalankan Secara Lokal
+---
 
-### Prasyarat
+## 🎯 Project Purpose
 
-- [Android Studio](https://developer.android.com/studio) versi terbaru (Ladybug/Koala ke atas)
-- JDK 11 atau lebih baru
-- Android SDK dengan `compileSdk 36` terpasang
-- Koneksi internet (untuk sinkronisasi dependency Gradle saat pertama kali membuka proyek)
+This project was built to practice and demonstrate real-world Android engineering concepts:
 
-### Langkah-langkah
+* Clean Architecture with clear `data` / `domain` / `presentation` separation
+* MVVM with unidirectional state (`StateFlow<UiState>` per screen)
+* Dependency Injection using Hilt
+* Local persistence with Room + DataStore
+* Declarative UI with Jetpack Compose
+* Single-Activity navigation with Navigation Compose
+* Secure credential handling (salted password hashing instead of plaintext)
+* Reusable, themeable design system components
 
-1. **Clone repository**
-   ```bash
-   git clone https://github.com/<username>/AplikasiPemesananMochi.git
-   cd AplikasiPemesananMochi
-   ```
+---
 
-2. **Buka di Android Studio**
-   - Pilih **File → Open**, arahkan ke folder hasil clone, lalu tunggu Android Studio
-     mengindeks proyek.
+## 📌 Notes
 
-3. **Sinkronisasi Gradle**
-   - Android Studio akan otomatis menawarkan **Sync Now** — klik untuk mengunduh seluruh
-     dependency (Compose, Hilt, Room, dll). Bisa juga dijalankan manual:
-     ```bash
-     ./gradlew build
-     ```
+* Authentication and data are fully local (no real backend) — the repository layer is
+  interface-based, so a real API can be swapped in later without touching the UI or ViewModels
+* Cart state is in-memory and does not persist across app restarts
+* No automated tests or payment integration included yet
 
-4. **Jalankan aplikasi**
-   - Sambungkan perangkat fisik (USB debugging aktif) atau jalankan emulator Android
-     (API 24 ke atas) dari **Device Manager**.
-   - Klik tombol **Run ▶** di Android Studio, atau lewat terminal:
-     ```bash
-     ./gradlew installDebug
-     ```
+---
 
-5. **(Opsional) Build APK debug**
-   ```bash
-   ./gradlew assembleDebug
-   ```
-   APK hasil build tersedia di `app/build/outputs/apk/debug/`.
+## 👩‍💻 Preview
 
-## 📸 Screenshot
-
-> Tempel screenshot UI di sini setelah aplikasi dijalankan pada perangkat/emulator.
+> Paste UI screenshots here after running the app on a device/emulator.
 
 ### Light Mode
 
@@ -102,9 +71,50 @@ lat.pam.hipudapp/
 |---|---|---|---|
 | _placeholder_ | _placeholder_ | _placeholder_ | _placeholder_ |
 
-## 👩‍💻 Identitas Pengembang
+---
 
-- **Nama:** Ratu Qurratul Aini
-- **Program Studi:** Teknik Informatika
-- **Universitas:** UIN Sunan Gunung Djati Bandung
-- **Mata Kuliah:** Pemrograman Aplikasi Mobile
+## ▶️ How to Build
+
+1. Clone repository
+
+```bash
+git clone https://github.com/USERNAME/AplikasiPemesananMochi.git
+```
+
+2. Open in Android Studio
+
+```
+File → Open → select the cloned folder
+```
+
+3. Sync Gradle
+
+```bash
+./gradlew build
+```
+
+4. Run the app
+
+Connect a physical device (USB debugging enabled) or start an emulator (API 24+), then hit
+**Run ▶** in Android Studio, or:
+
+```bash
+./gradlew installDebug
+```
+
+5. (Optional) Build a debug APK
+
+```bash
+./gradlew assembleDebug
+```
+
+The generated APK will be available at `app/build/outputs/apk/debug/`.
+
+---
+
+## 👩‍💻 Developer
+
+* **Name:** Ratu Qurratul Aini
+* **Status:** Informatics Engineering Student
+* **Email:** ratuquratul@gmail.com
+* **LinkedIn:** [linkedin.com/in/ratu-qurratul-aini-885b7a2a6](https://www.linkedin.com/in/ratu-qurratul-aini-885b7a2a6/)
